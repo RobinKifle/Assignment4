@@ -80,7 +80,7 @@ Where M is the total number of configurations,$\beta$ is the inverse temperature
 
 \begin{center}
 \begin{table} [H]
-\caption{Energy with periodic boundary conditions and magnetization for different spin-configurations} \label{tab:table5}
+\caption{Energy with periodic boundary conditions and magnetization for different spin-configurations} \label{tab:table1}
 \centerline{
 \begin{tabular}{c|c|c}
 Spin configuration & Energy& Magnetization\\
@@ -157,7 +157,7 @@ Results
 After only 10.000 Monte Carlo cycles the numerical solutions for the mean energy and the mean magnetization are close to the values found analytical. They are only off by a value of $10^{-3}$. To get the same magnitude of agreement for the specific heat and susceptibility, 100.000 Monte Carlo cycles was needed. For fewer than 10.000 Monte Carlo cycles the values are irregular.
 \begin{center}
 \begin{table} [H]
-\caption{Analytical and numerical solutions} \label{tab:table1}
+\caption{Analytical and numerical solutions} \label{tab:table2}
 \centerline{
 \begin{tabular}{c|c|c|c}
 & Analytical& Numerical& MC cycles\\
@@ -229,7 +229,7 @@ $\chi$&0.016043&0.015054& 100.000\\
 
 \begin{center}
 \begin{table} [H]
-\caption{Equilibrium values for T=1 T=2.4 for random- and up-spin orientated matrix} \label{tab:table2}
+\caption{Equilibrium values for T=1 T=2.4 for random- and up-spin orientated matrix} \label{tab:table3}
 \centerline{
 \begin{tabular}{c|c|c|c}
 Initial matrix:&Temperature:&Equilibrium&MC cycles\\
@@ -277,6 +277,14 @@ The up-spin oriented initial matrix with T=1 start with a magnetization equal to
 \Figref{configs_T} shows us a exponential growth in accepted configurations for increasing temperatures. There does not seem to be big differences between a random- and a up-spin initial 20x20 matrix.
 
 
+
+
+
+
+
+
+
+
 \newpage
 \begin{figure}[H]
 \centerline{
@@ -291,7 +299,7 @@ The up-spin oriented initial matrix with T=1 start with a magnetization equal to
 
 \begin{center}
 \begin{table} [H]
-\caption{Variance in energy found graphical and numerical} \label{tab:table3}
+\caption{Variance in energy found graphical and numerical} \label{tab:table4}
 \centerline{
 \begin{tabular}{c|c|c|c}
 Initial matrix:&Temperature:&Variance graphical&Variance numerical(spe heat)\\
@@ -305,6 +313,40 @@ Up-spin&2.4&3151.8&3152.76\\
 \end{center}
 graphical in matlab and numerical in c++
 
-\noindent For random- and up-spin initial matrix and T=1 there are almost only the equilibrium value and a small variance. For T=2.4 we notice a negative skewed probability distribution, with the mean value laying on the left side of the mode.
+\noindent For random- and up-spin initial matrix and T=1 there are almost only the equilibrium value and a small variance. For T=2.4 we notice a negative skewed probability distribution, with the mean value laying on the left side of the mode.\\
+
+We also weight the results as the plots for lower $L$ values have quite flat tops seen in (figurereffallupindis), making them imprecise.
+
+\begin{center}
+\begin{table} [H]
+\caption{Critical temperature for L$\rightarrow \infty$} \label{tab:table5}
+\centerline{
+\begin{tabular}{c|c|c}
+&$T_c(L=\infty)$&$a$\\
+$C_v$&7&8\\
+$\chi$&7&8\\
+Average&7&8\\
+\end{tabular}
+}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table} [H]
+\caption{Critical temperature for L$\rightarrow \infty$ with weighed least squares} \label{tab:table6}
+\centerline{
+\begin{tabular}{c|c|c}
+&$T_c(L=\infty)$&$a$\\
+$C_v$&7&8\\
+$\chi$&7&8\\
+Average&7&8\\
+\end{tabular}
+}
+\end{table}
+\end{center}
+
+\noindent The values we find varies depending on if we look at the plots for specific heat or the susceptibility. The average values are averages of the temperatures found using specific heat and susceptibility. The exact result for the critical temperature (after Lars Onsager) is $kT_c/J=\frac{2}{ln(1+\sqrt{2})}\approx2.269$ with $\nu=1$. This relates well with our results.
+
+
 
 \end{document}

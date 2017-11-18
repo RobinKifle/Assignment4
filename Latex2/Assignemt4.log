@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.29)  18 NOV 2017 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.29)  18 NOV 2017 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assi4.tex
-(./assi4.tex
+**Assignemt4.tex
+(./Assignemt4.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -711,8 +711,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-(./assi4.aux)
-\openout1 = `assi4.aux'.
+(./Assignemt4.aux)
+\openout1 = `Assignemt4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
@@ -813,226 +813,279 @@ LaTeX Info: Redefining \ref on input line 46.
 LaTeX Info: Redefining \pageref on input line 46.
 LaTeX Info: Redefining \nameref on input line 46.
 
-(./assi4.out) (./assi4.out)
+(./Assignemt4.out) (./Assignemt4.out)
 \@outlinefile=\write3
-\openout3 = `assi4.out'.
+\openout3 = `Assignemt4.out'.
 
- <uio.png, id=4, 2474.24374pt x 2223.30624pt>
+
+<uio.png, id=4, 2474.24374pt x 2223.30624pt>
 File: uio.png Graphic file (type png)
-
-<use uio.png>
+ <use uio.png>
 Package pdftex.def Info: uio.png used on input line 53.
 (pdftex.def)             Requested size: 185.56027pt x 166.74077pt.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./uio.p
 ng (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
- []
-
-[2]
-LaTeX Font Info:    Try loading font information for U+msa on input line 75.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 75.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
 
  []
 
-[3] [4] [5] <energy20_1e5mc.jpg, id=37, 562.1pt x 421.575pt>
-File: energy20_1e5mc.jpg Graphic file (type jpg)
-
-<use energy20_1e5mc.jpg>
-Package pdftex.def Info: energy20_1e5mc.jpg used on input line 177.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
- <energy20_1e5mc_T24.jpg, id=38, 562.1pt x 421.575pt>
-File: energy20_1e5mc_T24.jpg Graphic file (type jpg)
-
-<use energy20_1e5mc_T24.jpg>
-Package pdftex.def Info: energy20_1e5mc_T24.jpg used on input line 177.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<energy20_1e5mc_up.jpg, id=39, 562.1pt x 421.575pt>
-File: energy20_1e5mc_up.jpg Graphic file (type jpg)
-
-<use energy20_1e5mc_up.jpg>
-Package pdftex.def Info: energy20_1e5mc_up.jpg used on input line 186.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<energy20_1e5mc_T24_up.jpg, id=40, 562.1pt x 421.575pt>
-File: energy20_1e5mc_T24_up.jpg Graphic file (type jpg)
-
-<use energy20_1e5mc_T24_up.jpg>
-Package pdftex.def Info: energy20_1e5mc_T24_up.jpg used on input line 186.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
- [6 <./energy20_1e5mc.jpg> <./energy20_1e5mc_T24.jpg> <./energy20_1e5mc_up.jpg>
- <./energy20_1e5mc_T24_up.jpg>]
-<magn20_1e6mc.jpg, id=50, 562.1pt x 421.575pt>
-File: magn20_1e6mc.jpg Graphic file (type jpg)
- <use magn20_1e6mc.jpg>
-Package pdftex.def Info: magn20_1e6mc.jpg used on input line 197.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magn20_1e6mc_T24.jpg, id=51, 562.1pt x 421.575pt>
-File: magn20_1e6mc_T24.jpg Graphic file (type jpg)
- <use magn20_1e6mc_T24.jpg>
-Package pdftex.def Info: magn20_1e6mc_T24.jpg used on input line 197.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magnAbs20_1e6mc_T=1.jpg, id=52, 562.1pt x 421.575pt>
-File: magnAbs20_1e6mc_T=1.jpg Graphic file (type jpg)
-
-<use magnAbs20_1e6mc_T=1.jpg>
-Package pdftex.def Info: magnAbs20_1e6mc_T=1.jpg used on input line 206.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magnAbs20_1e6mc_T=24.jpg, id=53, 562.1pt x 421.575pt>
-File: magnAbs20_1e6mc_T=24.jpg Graphic file (type jpg)
-
-<use magnAbs20_1e6mc_T=24.jpg>
-Package pdftex.def Info: magnAbs20_1e6mc_T=24.jpg used on input line 206.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magn20_1e6mc_T=1_up.jpg, id=54, 562.1pt x 421.575pt>
-File: magn20_1e6mc_T=1_up.jpg Graphic file (type jpg)
-
-<use magn20_1e6mc_T=1_up.jpg>
-Package pdftex.def Info: magn20_1e6mc_T=1_up.jpg used on input line 215.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magn20_1e6mc_T24_up.jpg, id=55, 562.1pt x 421.575pt>
-File: magn20_1e6mc_T24_up.jpg Graphic file (type jpg)
-
-<use magn20_1e6mc_T24_up.jpg>
-Package pdftex.def Info: magn20_1e6mc_T24_up.jpg used on input line 215.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
- [7 <./magn20_1e6mc.jpg> <./magn20_1e6mc_T24.jpg> <./magnAbs20_1e6mc_T=1.jpg> <
-./magnAbs20_1e6mc_T=24.jpg>]
-<magnAbs20_1e6mc_T=1_up.jpg, id=63, 562.1pt x 421.575pt>
-File: magnAbs20_1e6mc_T=1_up.jpg Graphic file (type jpg)
-
-<use magnAbs20_1e6mc_T=1_up.jpg>
-Package pdftex.def Info: magnAbs20_1e6mc_T=1_up.jpg used on input line 224.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<magnAbs20_1e6mc_T24_up.jpg, id=64, 562.1pt x 421.575pt>
-File: magnAbs20_1e6mc_T24_up.jpg Graphic file (type jpg)
-
-<use magnAbs20_1e6mc_T24_up.jpg>
-Package pdftex.def Info: magnAbs20_1e6mc_T24_up.jpg used on input line 224.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-[8 <./magn20_1e6mc_T=1_up.jpg> <./magn20_1e6mc_T24_up.jpg> <./magnAbs20_1e6mc_T
-=1_up.jpg> <./magnAbs20_1e6mc_T24_up.jpg>]
-<acc20_1e6mc_T=1_ran.jpg, id=73, 562.1pt x 421.575pt>
-File: acc20_1e6mc_T=1_ran.jpg Graphic file (type jpg)
-
-<use acc20_1e6mc_T=1_ran.jpg>
-Package pdftex.def Info: acc20_1e6mc_T=1_ran.jpg used on input line 253.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<acc20_1e6mc_T=24_ran.jpg, id=74, 562.1pt x 421.575pt>
-File: acc20_1e6mc_T=24_ran.jpg Graphic file (type jpg)
-
-<use acc20_1e6mc_T=24_ran.jpg>
-Package pdftex.def Info: acc20_1e6mc_T=24_ran.jpg used on input line 253.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<acc20_1e6mc_T=1_up.jpg, id=75, 562.1pt x 421.575pt>
-File: acc20_1e6mc_T=1_up.jpg Graphic file (type jpg)
-
-<use acc20_1e6mc_T=1_up.jpg>
-Package pdftex.def Info: acc20_1e6mc_T=1_up.jpg used on input line 262.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<acc20_1e6mc_T=24_up.jpg, id=76, 562.1pt x 421.575pt>
-File: acc20_1e6mc_T=24_up.jpg Graphic file (type jpg)
-
-<use acc20_1e6mc_T=24_up.jpg>
-Package pdftex.def Info: acc20_1e6mc_T=24_up.jpg used on input line 262.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<acc20_1T3_1e6_ran.jpg, id=77, 562.1pt x 421.575pt>
-File: acc20_1T3_1e6_ran.jpg Graphic file (type jpg)
-
-<use acc20_1T3_1e6_ran.jpg>
-Package pdftex.def Info: acc20_1T3_1e6_ran.jpg used on input line 271.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
- <acc20_1T3_1e6_up.jpg, id=78, 562.1pt x 421.575pt>
-File: acc20_1T3_1e6_up.jpg Graphic file (type jpg)
-
-<use acc20_1T3_1e6_up.jpg>
-Package pdftex.def Info: acc20_1T3_1e6_up.jpg used on input line 271.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
- [9 <./acc20_1e6mc_T=1_ran.jpg> <./acc20_1e6mc_T=24_ran.jpg> <./acc20_1e6mc_T=1
-_up.jpg> <./acc20_1e6mc_T=24_up.jpg> <./acc20_1T3_1e6_ran.jpg> <./acc20_1T3_1e6
-_up.jpg>] [10]
-<apperances20_1e6_T=24_ran.jpg, id=93, 562.1pt x 421.575pt>
-File: apperances20_1e6_T=24_ran.jpg Graphic file (type jpg)
-
-<use apperances20_1e6_T=24_ran.jpg>
-Package pdftex.def Info: apperances20_1e6_T=24_ran.jpg used on input line 293.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-<apperances20_1e6_T=24_up.jpg, id=94, 562.1pt x 421.575pt>
-File: apperances20_1e6_T=24_up.jpg Graphic file (type jpg)
-
-<use apperances20_1e6_T=24_up.jpg>
-Package pdftex.def Info: apperances20_1e6_T=24_up.jpg used on input line 293.
-(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-[11 <./apperances20_1e6_T=24_ran.jpg> <./apperances20_1e6_T=24_up.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
- (./assi4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
-Package rerunfilecheck Info: File `assi4.out' has not changed.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+<energy1T.jpg, id=51, 1927.2pt x 989.6975pt>
+File: energy1T.jpg Graphic file (type jpg)
+ <use energy1T.jpg>
+Package pdftex.def Info: energy1T.jpg used on input line 180.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<energy24T.jpg, id=52, 1927.2pt x 989.6975pt>
+File: energy24T.jpg Graphic file (type jpg)
+ <use energy24T.jpg>
+Package pdftex.def Info: energy24T.jpg used on input line 180.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<absmag1T.jpg, id=54, 1927.2pt x 989.6975pt>
+File: absmag1T.jpg Graphic file (type jpg)
+ <use absmag1T.jpg>
+Package pdftex.def Info: absmag1T.jpg used on input line 190.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<absmag24T.jpg, id=55, 1927.2pt x 989.6975pt>
+File: absmag24T.jpg Graphic file (type jpg)
+ <use absmag24T.jpg>
+Package pdftex.def Info: absmag24T.jpg used on input line 190.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+ [6 <./energy1T.jpg> <./energy24T.jpg>]
+<magnetizationT1random.jpg, id=62, 1927.2pt x 989.6975pt>
+File: magnetizationT1random.jpg Graphic file (type jpg)
+
+<use magnetizationT1random.jpg>
+Package pdftex.def Info: magnetizationT1random.jpg used on input line 199.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<magnetizationT24random.jpg, id=63, 1927.2pt x 989.6975pt>
+File: magnetizationT24random.jpg Graphic file (type jpg)
+
+<use magnetizationT24random.jpg>
+Package pdftex.def Info: magnetizationT24random.jpg used on input line 199.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<magnetizationT1upspin.jpg, id=64, 1927.2pt x 989.6975pt>
+File: magnetizationT1upspin.jpg Graphic file (type jpg)
+
+<use magnetizationT1upspin.jpg>
+Package pdftex.def Info: magnetizationT1upspin.jpg used on input line 208.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<magnetizationT24upspin.jpg, id=65, 1927.2pt x 989.6975pt>
+File: magnetizationT24upspin.jpg Graphic file (type jpg)
+
+<use magnetizationT24upspin.jpg>
+Package pdftex.def Info: magnetizationT24upspin.jpg used on input line 208.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+[7 <./absmag1T.jpg> <./absmag24T.jpg> <./magnetizationT1random.jpg> <./magnetiz
+ationT24random.jpg> <./magnetizationT1upspin.jpg> <./magnetizationT24upspin.jpg
+>] <acceptanceMCT1random.jpg, id=80, 1927.2pt x 989.6975pt>
+File: acceptanceMCT1random.jpg Graphic file (type jpg)
+
+<use acceptanceMCT1random.jpg>
+Package pdftex.def Info: acceptanceMCT1random.jpg used on input line 221.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<acceptanceMCT24random.jpg, id=81, 1927.2pt x 989.6975pt>
+File: acceptanceMCT24random.jpg Graphic file (type jpg)
+
+<use acceptanceMCT24random.jpg>
+Package pdftex.def Info: acceptanceMCT24random.jpg used on input line 221.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<acceptanceMCT1upspin.jpg, id=82, 1927.2pt x 989.6975pt>
+File: acceptanceMCT1upspin.jpg Graphic file (type jpg)
+
+<use acceptanceMCT1upspin.jpg>
+Package pdftex.def Info: acceptanceMCT1upspin.jpg used on input line 230.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<acceptanceMCT24upspin.jpg, id=83, 1927.2pt x 989.6975pt>
+File: acceptanceMCT24upspin.jpg Graphic file (type jpg)
+
+<use acceptanceMCT24upspin.jpg>
+Package pdftex.def Info: acceptanceMCT24upspin.jpg used on input line 230.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<acceptanceVStrandom.jpg, id=84, 1927.2pt x 989.6975pt>
+File: acceptanceVStrandom.jpg Graphic file (type jpg)
+
+<use acceptanceVStrandom.jpg>
+Package pdftex.def Info: acceptanceVStrandom.jpg used on input line 239.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<acceptanceVStupspin.jpg, id=85, 1927.2pt x 989.6975pt>
+File: acceptanceVStupspin.jpg Graphic file (type jpg)
+
+<use acceptanceVStupspin.jpg>
+Package pdftex.def Info: acceptanceVStupspin.jpg used on input line 239.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+[8 <./acceptanceMCT1random.jpg> <./acceptanceMCT24random.jpg> <./acceptanceMCT1
+upspin.jpg> <./acceptanceMCT24upspin.jpg> <./acceptanceVStrandom.jpg> <./accept
+anceVStupspin.jpg>]
+<energyappearanceT24random.jpg, id=96, 1927.2pt x 989.6975pt>
+File: energyappearanceT24random.jpg Graphic file (type jpg)
+
+<use energyappearanceT24random.jpg>
+Package pdftex.def Info: energyappearanceT24random.jpg used on input line 252.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<energyappearanceT24upspin.jpg, id=97, 1927.2pt x 989.6975pt>
+File: energyappearanceT24upspin.jpg Graphic file (type jpg)
+
+<use energyappearanceT24upspin.jpg>
+Package pdftex.def Info: energyappearanceT24upspin.jpg used on input line 252.
+(pdftex.def)             Requested size: 289.06754pt x 148.44821pt.
+
+<energyapperanceTvarRan.jpg, id=98, 1927.2pt x 966.61125pt>
+File: energyapperanceTvarRan.jpg Graphic file (type jpg)
+
+<use energyapperanceTvarRan.jpg>
+Package pdftex.def Info: energyapperanceTvarRan.jpg used on input line 260.
+(pdftex.def)             Requested size: 578.16447pt x 289.98561pt.
+ [9 <./energyappearanceT24random.jpg> <./energyappearanceT24upspin.jpg> <./ener
+gyapperanceTvarRan.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--290
+
+ []
+
+<energyVSt.jpg, id=107, 1927.2pt x 989.6975pt>
+File: energyVSt.jpg Graphic file (type jpg)
+ <use energyVSt.jpg>
+Package pdftex.def Info: energyVSt.jpg used on input line 295.
+(pdftex.def)             Requested size: 578.16447pt x 296.91154pt.
+
+<magnetizationVSt.jpg, id=108, 1927.2pt x 989.6975pt>
+File: magnetizationVSt.jpg Graphic file (type jpg)
+
+<use magnetizationVSt.jpg>
+Package pdftex.def Info: magnetizationVSt.jpg used on input line 303.
+(pdftex.def)             Requested size: 578.16447pt x 296.91154pt.
+ [10 <./energyVSt.jpg>]
+<heatVSt.jpg, id=115, 1927.2pt x 989.6975pt>
+File: heatVSt.jpg Graphic file (type jpg)
+ <use heatVSt.jpg>
+Package pdftex.def Info: heatVSt.jpg used on input line 311.
+(pdftex.def)             Requested size: 578.16447pt x 296.91154pt.
+
+<susceptibilityVSt.jpg, id=116, 1927.2pt x 989.6975pt>
+File: susceptibilityVSt.jpg Graphic file (type jpg)
+
+<use susceptibilityVSt.jpg>
+Package pdftex.def Info: susceptibilityVSt.jpg used on input line 319.
+(pdftex.def)             Requested size: 578.16447pt x 296.91154pt.
+ [11 <./magnetizationVSt.jpg> <./heatVSt.jpg>]
+[12 <./susceptibilityVSt.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
+
+ []
+
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
+ (./Assignemt4.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package rerunfilecheck Info: File `Assignemt4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
+ )
+(\end occurred inside a group at level 1)
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
- ) 
+### simple group (level 1) entered at line 352 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 9919 strings out of 492995
- 146136 string characters out of 6132704
- 252313 words of memory out of 5000000
- 13304 multiletter control sequences out of 15000+600000
- 8702 words of font info for 33 fonts, out of 8000000 for 9000
+ 9943 strings out of 492995
+ 146236 string characters out of 6132704
+ 252481 words of memory out of 5000000
+ 13310 multiletter control sequences out of 15000+600000
+ 8870 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,40p,635b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on assi4.pdf (12 pages, 724576 bytes).
+ 36i,8n,40p,1493b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.
+pfb>
+Output written on Assignemt4.pdf (17 pages, 2007511 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
