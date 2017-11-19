@@ -48,7 +48,7 @@
 \begin{center}
 {\LARGE\bf
 FYS4150\\
-Project 4, deadline November 15.
+Project 4, deadline November 19.
 }
  \includegraphics[scale=0.075]{uio.png}\\
 Author: Robin D. Kifle,
@@ -59,24 +59,27 @@ University of Oslo, Autumn 2017
 Abstract
 }
 \end{center}
-We have made a c++ program to calculate some thermodynamic variables for a square lattice using the Ising model. The variables have been used for plots and further calculations in MATLAB. The outputs have shown to be sensitive to temperature, while the initial configuration of the lattice does not matter much. The energy, magnetization, specific heat and susceptibility stays close to the same for each spin for increasing lattice sizes. The critical temperature, showing a phase shift, is found at the same temperature for our lattice sizes, and is found to be at T=2.3.
+We have made a c++ program to calculate some thermodynamic variables for a square lattice using the Ising model. The variables have been used for plots and further calculations in MATLAB. The outputs have shown to be sensitive to temperature, while the initial configuration of the lattice does not matter much. The energy, magnetization, specific heat and susceptibility stay close to the same for each spin for increasing lattice sizes. The critical temperature, showing a phase shift, is found at the same temperature for our lattice sizes, and is found to be at T=2.3.
 
 \newpage
 
 {\LARGE\bf
 Introduction
 }\\
-In this project we will study phase transitions in magnetic systems. We will use the widely popular square-lattice Ising model in two dimensions, where particles interact with their nearest neighbours to get a magnetic spin of either +1 or -1. This model will be used to find a critical temperature showing a phase shift where the system goes from having magnetic moment to zero magnetic moment We will start off by looking at the simple case of a 2x2 lattice and use this as benchmark calculations for the rest of the project. We will then move on to larger lattices, and eventually compare these results to a more realistic model where the lattice is infinite in size. In this project the emphasis will be on understanding and usage of the Metropolis algorithm, and have a look on its efficiency and precision.
-The codes and files used in this project can be found at \url{www.da.com}
+
+\noindent In this project we will study phase transitions in magnetic systems. We will use the widely popular square-lattice Ising model in two dimensions, where particles interact with their nearest neighbours to get a magnetic spin of either +1 or -1. This model will be used to find a critical temperature showing a phase shift where the system goes from having magnetic moment to zero magnetic moment. We will start off by looking at the simple case of a 2x2 lattice and use this as benchmark calculations for the rest of the project. We will then move on to larger lattices, and eventually compare these results to a more realistic model where the lattice is infinite in size. In this project the emphasis will be on understanding and usage of the Metropolis algorithm, and have a look at its efficiency and precision.
+The codes and files used in this project can be found at \url{https://github.com/RobinKifle/Assignment4} and
+\url{https://github.com/sanderwl/Assigment-4}. The last one includes the parallelization and the matlab plots.
 \\
 \newpage
 
 {\LARGE\bf
 Method
 }\\
-Before starting on the program we need to find analytical expressions for the partition function Z and the corresponding energy values E, the mean magnetization $|M|$, the specific heat $C_v$ and the susceptibility $\chi$ as functions of the temperature T using periodic boundary conditions.\\
+
+\noindent Starting of, we need to find analytical expressions for the partition function Z and the corresponding energy values E, the mean magnetization $|M|$, the specific heat $C_v$ and the susceptibility $\chi$ as functions of the temperature T using periodic boundary conditions.\\
 The partition function is given by: $$Z = \sum\limits_{i=1}^{M}e^{-\beta E_i}$$
-Where M is the total number of configurations,$\beta$ is the inverse temperature given by $\beta = \frac{1}{kT}$ with k as the Boltzmann constant. $E_i$ is the energy for different spin settings given by: $$E=J\sum\limits_{<kl>}^{N}s_ks_l$$ where J is a constant which expresses the strength of the interaction between spins. N is the total number of configurations.
+Where M is the total number of configurations, $\beta$ is the inverse temperature given by $\beta = \frac{1}{kT}$ with k as the Boltzmann constant. $E_i$ is the energy for different spin settings given by: $$E=J\sum\limits_{<kl>}^{N}s_ks_l$$ where J is a constant which expresses the strength of the interaction between spins. N is the total number of configurations.
  $<kl>$ expresses that we only look at the nearest neighbours in the lattice. $s_k$ and $s_l$ are the spins of two neighbouring objects. \\
  For now we work with a 2x2 lattice and the Ising model where the spins can only be in two states, giving a total number of $2^4=16$ configurations.
 
@@ -132,7 +135,7 @@ $\chi = \beta(\frac{8e^{8\beta J}+8}{cosh(8\beta J)+3}-\frac{(2e^{8\beta J}+4)^2
 \end{center}
 \noindent Notice that the terms in $C_v$ and $\chi$, $<E^2>-<E>^2$ and $<|M|^2>-<|M|>^2$, respectively, are the variance of the energy and variance of the magnetization.\\
 \\
-As mentioned, we will use the Metropolis algorithm. This algorithm can be described in ten steps:\begin{enumerate}
+As mentioned, we will use the Metropolis algorithm. This algorithm can be described in ten steps\footnote{Hjorth-Jensen., 2015}\begin{enumerate}
 \item Establish an initial matrix with size $L \times L$ and compute the energy.
 \item Position yourself at a random point in the lattice and flip one spin.
 \item Compute the energy for this new state.
@@ -142,13 +145,12 @@ As mentioned, we will use the Metropolis algorithm. This algorithm can be descri
 \item If the random number is bigger than $w$, reject the new configuration and jump back to step 2.
 \item If the random number is smaller or equal to $w$, accept the new configuration. 
 \item Update expectation values
-\item Repeat $L \times L$ times to let every lattice point get a chance to get picked.
+\item Repeat $L \times L$ times to let every lattice point get a chance to get picked.\\
 \end{enumerate}
-\hfill{Hjorth-Jensen., 2015}\\
 
-\noindent From our simulations for a LxL lattice with L=20, L=40, L=60, L=80, L=100, we can find analytical values for the critical temperature $T_c(L)$ at the maximum values for the plots. We can then use these values to find a value for the critical temperature in the thermodynamic limit L$\rightarrow \infty$ using the expression: $$T_c(L)-T_c(L=\infty)=aL^{-1/\nu}$$
+\noindent From our simulations for a LxL lattice with L=20, L=40, L=60, L=80, L=100, we will find analytical values for the critical temperature $T_c(L)$ on different plots. We can then use these values to find a value for the critical temperature in the thermodynamic limit L$\rightarrow \infty$ using the expression: $$T_c(L)-T_c(L=\infty)=aL^{-1/\nu}$$
 Where $a$ is a constant and we use $\nu=1$. We set $L^{-1}=X$ and solve the equation $T_c(L)=aX+T_c(L=\infty)$ using Matlabs' least squares solver.\\
-
+\noindent To keep the elapsed time endurable, we also parallelized the code using MPI. This allowed us to perform 8 simultaneous Monte Carlo cycles, resulting in an almost 8x faster code.
 
 
 \newpage
@@ -210,7 +212,7 @@ after only 10.000 Monte Carlo cycles the numerical solutions for the mean energy
 \label{fig:meanmagnup}
 \end{figure}
 
-\noindent In figure \ref{fig:absmagn} it is noticeable that the absolute magnetization converges rapidly after the same amount of Monte Carlo cycles as the energy previously mentioned. The absolute magnetization behaves differently than the energy from figure \ref{fig:energy}, indicating that there are multiple lattice configurations giving the same energy minimum. (abs vs mean different??).
+\noindent In figure \ref{fig:absmagn} it is noticeable that the absolute magnetization converges rapidly after the same amount of Monte Carlo cycles as the energy previously mentioned. The absolute magnetization behaves differently than the energy from figure \ref{fig:energy}, indicating that there are multiple lattice configurations giving the same energy minimum.
 In figure \ref{fig:meanmagnran} and figure \ref{fig:meanmagnup} we notice that the magnetization oscillates between positive and negative values. Comparing this with figure \ref{fig:energy} and \ref{fig:absmagn}, it is noticeable that the magnetization keeps oscillating between positive and negative values after the energy and absolute magnetization has reached equilibrium.\\
 
 
@@ -270,22 +272,21 @@ In figure \ref{fig:acctemp} we can clearly see an exponential growth in number o
 \centerline{
 \begin{tabular}{c|c}
 Temperature& Variance\\
-1.00&0.0227441\\
-1.25&0.129337\\
-1.50&0.444368\\
-1.75&1.18547\\
-2.00&2.88226\\
-2.25&7.89626\\
-2.50&6.18416\\
-2.75&4.25249\\
-3.00&3.61595\\
+1.00&9.09764\\
+1.25&51.7348\\
+1.50&177.7472\\
+1.75&478.188\\
+2.00&1152.904\\
+2.25&3158.504\\
+2.50&2473.664\\
+2.75&1700.996\\
+3.00&1446.38\\
 \end{tabular}
 }
 \end{table}
 \end{center}
 
-\noindent The probability distribution in figure \ref{fig:dist} show a negative skewed distribution, with the mean value laying one the left side of the mode. SUMSUM
-From figure \ref{fig:distvar} we can clearly see that there are a higher probability for higher energies for increasing temperature. It is also noticeable that the energy is also oscillating more for higher temperatures. For T=1 there are almost only the equilibrium state. 
+\noindent The probability distribution in figure \ref{fig:dist} show a negative skewed distribution, with the mean value laying one the left side of the mode. From figure \ref{fig:distvar} we can clearly see that there are a higher probability for higher energies for increasing temperature. It is also noticeable that the energy is also oscillating more for higher temperatures. For T=1 there are almost only the equilibrium state. From \ref{tab:table3} we notice that the variance peaks between T=2.5 and T=2.75. This will be discussed later.
 \\
 
 
@@ -335,7 +336,9 @@ Lattice size& Time in seconds\\
 \end{table}
 \end{center}
 
-\noindent The critical temperature seem to be the same value of 2.3, for all matrices, looking at both the specific heat and the susceptibility in figure \ref{fig:heatL} and \ref{fig:susL}. This is disappointing as this of course will give us the same value of 2.3 for the critical temperature in the thermodynamic limit $L \rightarrow \infty$. Comparing this critical temperature with figure \ref{fig:energyL} and \ref{fig:magnL}, it seems that this value would be found as the double derivative of these functions.
+
+\noindent From figure \ref{fig:heatL} and \ref{fig:susL} we notice peaks indicating the critical temperature at T=2.3 for all matrices. Knowing this, we notice a change in curvature in figure \ref{fig:energyL} and \ref{fig:magnL} at this same temperature. The energy goes to higher values for higher temperatures while the magnitization seem to go from having a magnetic moment to zero magnetic moment. The change in magnetization  seem to become steeper for larger lattices and the susceptibility peaks higher for larger lattices.
+
 
 \newpage
 {\LARGE\bf
@@ -349,22 +352,24 @@ A random initial matrix will behave different at the start before reaching the s
 
 \noindent Looking at the probability distribution in figure \ref{fig:dist}, we notice that the probability is negative skewed, which means that the probability for lower energy values are larger than for higher energy values, which is expected.\\
 
-\noindent In figure \ref{fig:energyL} and \ref{fig:magnL} we notice that the concavity changes at about T=2.3, correlating with peaks in specific heat {figure \ref{fig:heatL}) and susceptibility (figure \ref{fig:susL} ) at T=2.3. This fits well with the fact that magnetic susceptibility is a parameter that tell us how much a extensive parameter changes when an intensive parameter increases. Hence the magnetic susceptibility peaks where the concavity of magnetization changes. We have the same correlation between specific heat and energy. We notice in figure \ref{fig:magnL} a steeper transition for larger lattices, which is also noticeable in figure \ref{fig:susL}. Following this logic we would expect an infinite slope when $L \rightarrow\infty$  \\
+\noindent In figure \ref{fig:energyL} and \ref{fig:magnL} we notice that the concavity changes at about T=2.3, correlating with peaks in specific heat {figure \ref{fig:heatL}) and susceptibility (figure \ref{fig:susL} ) at T=2.3. This fits well with the fact that magnetic susceptibility is a parameter that tell us how much a extensive parameter changes when an intensive parameter increases. Hence the magnetic susceptibility peaks where the concavity of magnetization changes. We have the same correlation between specific heat and energy. We notice in figure \ref{fig:magnL} a steeper transition for larger lattices, which is also noticeable in figure \ref{fig:susL}. Following this logic we would expect an infinite slope when $L \rightarrow\infty$.\\
+We can also see from table \ref{tab:table3} that the variance increases until around the critical temperature before decreasing. This corresponds with the remarks of figure \ref{fig:energyL}, \ref{fig:magnL}, \ref{fig:heatL} and \ref{fig:susL}.
 The exact result for the critical temperature (after Lars Onsager) is $kT_c/J=\frac{2}{ln(1+\sqrt{2})}\approx2.269$ with $\nu=1$. This relates decent with our results.
 
 \newpage
 {\LARGE\bf
 Errors
 }\\
-Our estimates for the critical temperature is the same value for all matrix sizes. We used a step in temperature of 0.05. If we used a smaller stepsize we might have gotten results which would give a better estimate of the exact critical temperature.
 
+\noindent Our estimates for the critical temperature is the same value for all matrix sizes. This is disappointing as this of course will give us the same value for the critical temperature in the thermodynamic limit $L \rightarrow \infty$.
+We used a step in temperature of 0.05. If we used a smaller stepsize we would have gotten results which would give a better estimate of the exact critical temperature. We can from table \ref{tab:table4} see that the runtime for the lattices is quite long, even when being run on 8 processors by parallelization. Larger lattices could also give us better results, but the runtime would be awful.
 
 \newpage
 {\LARGE\bf
 Conclusion
 }\\
 
-
+\noindent The squared lattice Ising model has shown to be respectable for this project. Our results for the thermodynamic variables, energy, magnetization, specific heat, susceptibility and also the critical temperature fits decent with the exact values. Parallelization was found useful as it decreased the computation time.
 
 
 
