@@ -59,7 +59,7 @@ University of Oslo, Autumn 2017
 Abstract
 }
 \end{center}
-We have made a c++ program to calculate some thermodynamic variables for a square lattice using the Ising model. The variables have been used for plots and further calculations in MATLAB. The outputs have shown to be sensitive to temperature, while the initial configuration of the lattice does not matter much. The energy, magnetization, specific heat and susceptibility stay close to the same for each spin for increasing lattice sizes. The critical temperature, showing a phase shift, is found at the same temperature for our lattice sizes, and is found to be at T=2.3.
+We have made a c++ program to calculate some thermodynamic variables for a square lattice using the Ising model. The variables have been used for plots and further calculations in MATLAB. The outputs have shown to be sensitive to temperature, while the initial configuration of the lattice does not matter much. The energy, magnetization, specific heat and susceptibility stay close to the same for each spin for increasing lattice sizes. The critical temperature, showing a phase shift, is found at the same temperature for all our lattice sizes, and is found to be at T=2.3.
 
 \newpage
 
@@ -355,18 +355,16 @@ A random initial matrix will behave different at the start before reaching the s
 \noindent In figure \ref{fig:energyL} and \ref{fig:magnL} we notice that the concavity changes at about T=2.3, correlating with peaks in specific heat {figure \ref{fig:heatL}) and susceptibility (figure \ref{fig:susL} ) at T=2.3. This fits well with the fact that magnetic susceptibility is a parameter that tell us how much a extensive parameter changes when an intensive parameter increases. Hence the magnetic susceptibility peaks where the concavity of magnetization changes. We have the same correlation between specific heat and energy. We notice in figure \ref{fig:magnL} a steeper transition for larger lattices, which is also noticeable in figure \ref{fig:susL}. Following this logic we would expect an infinite slope when $L \rightarrow\infty$.\\
 We can also see from table \ref{tab:table3} that the variance increases until around the critical temperature before decreasing. This corresponds with the remarks of figure \ref{fig:energyL}, \ref{fig:magnL}, \ref{fig:heatL} and \ref{fig:susL}.
 The exact result for the critical temperature \footnote{Lars Onsager, \url{https://journals.aps.org/pr/abstract/10.1103/PhysRev.65.117}} is $kT_c/J=\frac{2}{ln(1+\sqrt{2})}\approx2.269$ with $\nu=1$. This relates decent with our results.\\
-\\
-\\
-\\
+
+\newpage
 {\LARGE\bf
 Errors
 }\\
 
 \noindent Our estimates for the critical temperature is the same value for all matrix sizes. This is disappointing as this of course will give us the same value for the critical temperature in the thermodynamic limit $L \rightarrow \infty$.
 We used a step in temperature of 0.05. If we used a smaller stepsize we would have gotten results which would give a better estimate of the exact critical temperature. We can from table \ref{tab:table4} see that the runtime for the lattices is quite long, even when being run on 8 processors by parallelization. Larger lattices could also give us better results, but the runtime would be awful.\\
-\\
-\\
-\\
+
+\newpage
 {\LARGE\bf
 Conclusion
 }\\
